@@ -92,6 +92,7 @@ private:
         createLogicalDevice();
         createSwapChain();
         createImageViews();
+        createGraphicsPipeline();
     }
 
     void createSurface()
@@ -203,6 +204,10 @@ private:
 
         return deviceProperties.deviceType == VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU && deviceFeatures.geometryShader;
         */
+    }
+
+    void createGraphicsPipeline()
+    {
     }
 
     void createImageViews()
